@@ -1,0 +1,21 @@
+<div [ngSubmit]="submitLogin()" class="login_form">
+    
+    <br /><br />
+    <div class="form">
+        <form>
+        <h1 style="font-size: 30px;">Log In</h1><br /><br />
+              <p>Email Id</p>
+              <input type="email" name="email" placeholder="abc@example.com" [(ngModel)]="name" #ctrl="ngModel" [(ngModel)]="formData.email" required />
+              <br /><br />
+              <p>Password</p>
+              <input type="password" name="password" placeholder="Password" [(ngModel)]="password" #ctrl="ngModel" required /><br /><br />
+              <button class="all_button" name="submit">Log In</button>
+              <br />
+            </form>       
+    </div>                  
+    
+    
+</div>
+
+{{name}}
+{{password}}
